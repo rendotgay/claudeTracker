@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        @font-face {
+            font-family: "Anthropic Sans";
+            src: url(https://assets-proxy.anthropic.com/claude-ai/v2/assets/v1/cc27851ad-CFxw3nG7.woff2) format("woff2");
+        }
+        body {
+            width: 220px;
+            padding: 12px;
+            font-family: "Anthropic Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            margin: 0;
+            background-color: #1f1f1e;
+            color: #ccc;
+        }
+        h3 { margin: 0 0 12px 0; font-size: 14px; color: #fff; }
+        .setting-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        label { font-size: 12px; font-weight: 500; }
+        input[type="number"] {
+            font-family: "Anthropic Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #1f1f1e;
+            color: #ccc;
+            width: 50px;
+            padding: 3px;
+            font-size: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            text-align: center;
+        }
+        input[type="checkbox"] {
+            accent-color: #2196F3;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<h3>
+    <img src="icons/icon32.png" alt="Claude Icon" width="20" height="20" style="vertical-align: middle; margin-right: 4px;">
+    Tracker Settings
+</h3>
+
+<div class="setting-row">
+    <label for="showOffPeak">Show Off-Peak Status</label>
+    <input type="checkbox" id="showOffPeak" checked>
+</div>
+
+<div class="setting-row">
+    <label for="countdownMinutes">Countdown (mins)</label>
+    <input type="number" id="countdownMinutes" value="30" min="1" max="240">
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
