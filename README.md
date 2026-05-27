@@ -2,6 +2,8 @@
 
 A simple Chromium extension to display if it's currently a peak demand period
 
+Tokens deplete much faster during peak hours, so it's a good idea to use them wisely. This extension helps you know when that is!
+
 ## Features
 - Simple unobtrusive text above chat composer
 - Customizable time display before peak demand period
