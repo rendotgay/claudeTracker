@@ -2,9 +2,17 @@
 
 A simple Chromium extension to display if it's currently a peak demand period
 
+## Features
+- Simple unobtrusive text above chat composer
+- Customizable time display before peak demand period
+- Toggleable "Off-Peak" display
+
 ## Installation
 1. Open your browser's extensions page (chrome://extensions)
 2. Toggle "Developer mode"
 3. Click "Load unpacked extension"
 4. Select the extension's directory
 5. Reload any Claude pages
+
+## To Do
+- Display peak display on claude.ai/new
